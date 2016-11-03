@@ -18,6 +18,9 @@ gem 'coffee-rails', '~> 4.2'
 gem "trailblazer"
 gem "trailblazer-rails"
 
+# Use foundation for pretties
+gem 'foundation-rails'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
