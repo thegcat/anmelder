@@ -24,6 +24,9 @@ gem "trailblazer-rails"
 # Use foundation for pretties
 gem 'foundation-rails'
 
+# Make this an OAuth2 provider
+gem 'doorkeeper'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
