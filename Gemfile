@@ -27,6 +27,9 @@ gem 'foundation-rails'
 # Make this an OAuth2 provider
 gem 'doorkeeper'
 
+# Authenticate users
+gem 'devise'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
