@@ -157,7 +157,7 @@ GEM
     reform-rails (0.1.7)
       activemodel (>= 3.2)
       reform (>= 2.2.0)
-    representable (3.0.1)
+    representable (3.0.2)
       declarative (~> 0.0.5)
       uber (>= 0.0.15, < 0.2.0)
     responders (2.3.0)
