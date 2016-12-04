@@ -150,7 +150,7 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    reform (2.2.2)
+    reform (2.2.3)
       disposable (>= 0.3.0, < 0.4.0)
       representable (>= 2.4.0, < 3.1.0)
       uber (>= 0.0.15, < 0.2.0)
