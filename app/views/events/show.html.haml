@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @event.title
+%p
+  %b Body:
+  = @event.body
+%p
+  %b Registration from:
+  = @event.registration_from
+%p
+  %b Registration to:
+  = @event.registration_to
+
+= link_to 'Edit', edit_event_path(@event)
+\|
+= link_to 'Back', events_path
