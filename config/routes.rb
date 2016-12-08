@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :events
+  resources :events, param: :slug
   devise_for :members
   use_doorkeeper
   resources :participants
