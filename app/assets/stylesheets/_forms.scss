@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+
+.is-invalid {
+  label,
+  span {
+    color: $form-label-color-invalid;
+  }
+
+  input {
+    @include form-input-error;
+  }
+}
+
+.simple_form {
+  #{text-inputs()},
+  textarea {
+    margin-bottom: 0;
+  }
+
+  .input {
+    margin-bottom: $form-spacing;
+  }
+}
