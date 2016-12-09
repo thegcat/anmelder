@@ -51,6 +51,15 @@
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
 
+// Container for max-width
 .container {
   @include grid-row;
+}
+
+// No margin-bottom for the second to last child in callouts
+// (only necessary when there is a close-button, hopefully we won't have others)
+.callout {
+  :nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
 }
