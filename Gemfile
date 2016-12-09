@@ -24,6 +24,9 @@ gem "trailblazer-rails"
 # Use foundation for pretties
 gem 'foundation-rails'
 
+# Nice forms
+gem 'simple_form'
+
 # Make this an OAuth2 provider
 gem 'doorkeeper'
 

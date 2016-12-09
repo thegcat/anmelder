@@ -1,25 +1,15 @@
-= form_for @event do |f|
-  - if @event.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@event.errors.count, "error")} prohibited this event from being saved:"
-      %ul
-        - @event.errors.full_messages.each do |msg|
-          %li= msg
-
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.label :slug
-    = f.text_field :slug
-  .field
-    = f.label :body
-    = f.text_area :body
-  .field
-    = f.label :registration_from
-    = f.text_field :registration_from
-  .field
-    = f.label :registration_to
-    = f.text_field :registration_to
-  .actions
-    = f.submit 'Save'
+= simple_form_for @event do |f|
+  .row
+    = f.input :title
+  .row
+    = f.input :slug
+  .row
+    = f.input :body
+  .row
+    = f.input :registration_from, as: :datetime, html5: :true,
+        wrapper_html: { class: 'small-6' }
+    = f.input :registration_to, as: :datetime, html5: :true,
+        wrapper_html: { class: 'small-6' }
+  .row
+    .columns
+      = f.button :submit
