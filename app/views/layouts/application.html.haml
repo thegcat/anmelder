@@ -13,9 +13,11 @@
 
   %body
     .container
-      %p.notice
-        = notice
-      %p.alert
-        = alert
+
+      - if notice
+        .callout.success{ data: { closable: true } }
+          %p= notice
+          %button.close-button{ data: { close: true } }
+            %span &times;
 
       = yield
