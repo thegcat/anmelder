@@ -12,10 +12,10 @@
     = csrf_meta_tag
 
   %body
+    .container
+      %p.notice
+        = notice
+      %p.alert
+        = alert
 
-    %p.notice
-      = notice
-    %p.alert
-      = alert
-
-    = yield
+      = yield
