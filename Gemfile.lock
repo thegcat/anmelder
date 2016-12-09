@@ -172,6 +172,9 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
     sexp_processor (4.7.0)
+    simple_form (3.3.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -229,6 +232,7 @@ DEPENDENCIES
   pundit
   rails (~> 5.0.0, >= 5.0.0.1)
   sass-rails (~> 5.0)
+  simple_form
   trailblazer
   trailblazer-rails
   tzinfo-data
@@ -236,4 +240,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.12.5
+   1.13.6

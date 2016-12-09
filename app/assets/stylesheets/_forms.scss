@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+
+.is-invalid {
+  label,
+  span {
+    color: $form-label-color-invalid;
+  }
+
+  input {
+    @include form-input-error;
+  }
+}
+
+// scss-lint:disable SelectorFormat
+// given by simple_form (sic), haven't found how to change
+.simple_form {
+// scss-lint:enable SelectorFormat
+  #{text-inputs()},
+  textarea {
+    margin-bottom: 0;
+  }
+
+  .input {
+    margin-bottom: $form-spacing;
+  }
+}
