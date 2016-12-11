@@ -12,12 +12,14 @@
     = csrf_meta_tag
 
   %body
-    .container
+    =# we need the row class so that foundation can recognize inner rows
+    .outer-container.row
+      .inner-container.column
 
-      - if notice
-        .callout.success{ data: { closable: true } }
-          %p= notice
-          %button.close-button{ data: { close: true } }
-            %span &times;
+        - if notice
+          .callout.success{ data: { closable: true } }
+            %button.close-button{ data: { close: true } }
+              %span &times;
+            %p= notice
 
-      = yield
+        = yield
