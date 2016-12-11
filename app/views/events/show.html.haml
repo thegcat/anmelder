@@ -1,6 +1,5 @@
-%p
-  %b Title:
-  = @event.title
+%h1= @event.title
+
 %p
   %b Body:
   = @event.body
@@ -11,6 +10,5 @@
   %b Registration to:
   = @event.registration_to
 
-= link_to 'Edit', edit_event_path(@event)
-\|
-= link_to 'Back', events_path
+= link_to 'Edit', edit_event_path(@event), class: 'button success'
+= link_to 'Back', events_path, class: 'button secondary'

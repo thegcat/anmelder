@@ -1,27 +1,27 @@
-%h1 Listing events
+%h1 Events
 
 %table
   %thead
     %tr
       %th Title
-      %th Body
-      %th Registration from
-      %th Registration to
-      %th
-      %th
+      %th Slug
+      %th From
+      %th To
       %th
 
   %tbody
     - @events.each do |event|
       %tr
-        %td= event.title
-        %td= event.body
+        %td= link_to event.title, event
+        %td= event.slug
         %td= event.registration_from
         %td= event.registration_to
-        %td= link_to 'Show', event
-        %td= link_to 'Edit', edit_event_path(event)
-        %td= link_to 'Destroy', event, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td.button-group.small
+          = link_to 'Edit', edit_event_path(event), class: 'button hollow'
+          = link_to 'Destroy', event, :method => :delete,
+              :data => { :confirm => 'Are you sure?' },
+              class: 'button hollow alert'
 
 %br
 
-= link_to 'New Event', new_event_path
+= link_to 'New Event', new_event_path, class: 'button success'
