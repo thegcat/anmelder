@@ -50,3 +50,14 @@
 //
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
+
+// Additional styling for buttons in tables
+tbody {
+  .button-group {
+    padding: rem-calc(8 10);
+  }
+
+  .button {
+    min-width: rem-calc(5);
+  }
+}
